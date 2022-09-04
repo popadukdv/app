@@ -8,11 +8,9 @@ on:
     branches: [ "master" ]
 
 jobs:
-
-  build:
+  build-container:
     name: Build container
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
     - uses: actions/checkout@v3
