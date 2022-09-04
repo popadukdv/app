@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: popadukdv/basic_metrics, popadukdv/basic_metrics:${{ github.run.number }}
+          tags: popadukdv/basic_metrics, popadukdv/basic_metrics
