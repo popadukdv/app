@@ -8,9 +8,12 @@ on:
     branches: [ "master" ]
 
 jobs:
+
   build-container:
+
     name: Build container
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
       - uses: actions/checkout@v3
@@ -27,3 +30,4 @@ jobs:
           push: true
           pull_request: true
           tags: popadukdv/basic_metrics:latest, popadukdv/basic_metrics:${{ github.run.number }}
+          
