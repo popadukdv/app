@@ -25,4 +25,5 @@ jobs:
       with:
         context: .
         push: true
+        pull_request: true
         tags: popadukdv/basic_metrics:latest, popadukdv/basic_metrics:${{ github.run.number }}
