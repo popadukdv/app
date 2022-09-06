@@ -8,7 +8,7 @@ COPY data.json /var/www/html/
 COPY nginx.conf /etc/nginx/nginx.conf
 
 RUN chmod 777 /app/app.sh
-RUN chmod -R 777 /etc/nginx/conf.d/
+RUN chmod 777 /etc/nginx/conf.d/default.conf
 #RUN chmod 777 /app/start.sh
 
 RUN rm /var/www/html/*debian.html
