@@ -65,7 +65,7 @@ while true; do
     add_metric "INODE" "$inode_pecent_used"
 
     #Output to file
-    echo "$data" > data.json
+    echo "$data" > /var/www/html/data.json
 
     sleep 1
 done
