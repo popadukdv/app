@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  app1:
+    image: popadukdv/basic_metrics
+    ports:
+      - "8001:80"
+  app2:
+    image: popadukdv/basic_metrics
+    ports:
+      - "8002:80"
+  web_server:
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - app1
+      - app2
